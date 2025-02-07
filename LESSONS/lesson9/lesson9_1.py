@@ -1,9 +1,9 @@
-import tools
+from gear import widget
 
 if __name__ =='__main__':
     n=int(input("Gine me a num(<10): "))
-    names=tools.name_G(n)
-    State:list[dict]=tools.G_state(names)
+    names=widget.name_G(n)
+    State:list[dict]=widget.G_state(names)
     for people in State:
         for key,value in people.items():
             print(f'{key}:{value}')
